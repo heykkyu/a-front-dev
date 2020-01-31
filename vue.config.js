@@ -1,11 +1,14 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/front-dev/'
+    : '/',
   outputDir: 'docs',
   pages: {
     index: {
       entry: 'src/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'heykkyu.github.io',
+      title: 'front-dev',
     },
   },
   configureWebpack: {
