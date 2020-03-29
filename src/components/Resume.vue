@@ -1,0 +1,136 @@
+<template>
+  <header class="main-header">
+    <div class="container">
+      <div class="row personal-profile">
+        <div class="personal-profile__avatar">
+          <img class="" src="../assets/profil-pic-usa.jpeg" alt="avatar">
+        </div>
+        <div class="personal-profile_text">
+          <p class="personal-profile__name">Jeongkyu Kim</p>
+          <p class="personal-profile__work">Frontend Developer</p>
+          <div class="personal-profile__contacts">
+            <dl class="contact-list contact-list__opacity-titles">
+              <dt>B/Year:</dt>
+              <dd>1991</dd>
+              <dt>Phone:</dt>
+              <dd><a href="tel:+821099419961">010-9941-9961</a></dd>
+              <dt>Email:</dt>
+              <dd><a href="mailto:heykkyu@gmail.com">heykkyu@gmail.com</a></dd>
+              <dt>Address:</dt>
+              <dd>Gangnam-gu, Seoul, South Korea</dd>
+            </dl>
+          </div>
+          <p class="personal-profile__social">
+            <a href="//github.com/heykkyu?tab=repositories" target="_blank">
+              <img src="../assets/logo-github.png"/>
+            </a>
+            <a href="//www.linkedin.com/in/heykkyu" target="_blank">
+             <img src="../assets/logo-linkedin.png"/>
+            </a>
+            <a href="//blog.naver.com/heysiki" target="_blank">
+              <img src="../assets/logo-naverblog.png"/>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+.main-header {
+  background: linear-gradient(34deg, rgba(100,46,152,1) 14%, rgba(0,212,255,1) 92%);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 40px;
+  color: #fff;
+  padding-top: 100px;
+  .personal-profile {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    .personal-profile__avatar {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      img {
+        border-radius: 5px;
+        box-shadow: 0 0 27px rgba(96,96,96,.34);
+        width: 90%;
+        height: 380px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin-top: 10px;
+        position: relative;
+        top: 40px;
+      }
+    }
+    .personal-profile_text {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.66667%;
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+      .personal-profile__name {
+        font-size: 44px;
+        line-height: 50px;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+      .personal-profile__work {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+      .personal-profile__contacts {
+        margin-bottom: 20px;
+        .contact-list {
+          font-size: 16px;
+          line-height: 24px;
+          dt {
+            opacity: .4;
+            float: left;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+          dd {
+            padding-left: 100px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .personal-profile__social {
+        margin-bottom: 35px;
+        a {
+          font-size: 24px;
+          margin-right: 15px;
+            &:nth-child(1) img {
+              max-width: 80px;
+            }
+            &:nth-child(2) img {
+              max-width: 90px;
+            }
+            &:nth-child(3) img {
+              max-width: 110px;
+            }
+        }
+      }
+    }
+  }
+}
+
+</style>
