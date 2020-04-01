@@ -1,6 +1,10 @@
 <template>
   <div class="section-comp">
-    {{this.list}}
+    <div v-for="repo in repoList" :key="repo.id">
+      <div v-if="!repo.fork">
+        {{repo.name}} // {{repo.html_url}} // {{repo.description}} // {{repo.homepage}} // {{repo.updated_at}}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -13,21 +17,18 @@ import axios from 'axios';
     },
     data() {
       return {
-        list: []
+        repoList: []
       }
     },
     methods: {
       get() {
-        axios.get('//api.github.com/user/repos', 
-        // {headers: "Authorization: 'token 06e50a5aed2c45f3434eac3082d050e819998ca7'"})
-         {
-            headers: { Authorization: "token 06e50a5aed2c45f3434eac3082d050e819998ca7"}
-        })
+        axios
+        .get('//api.github.com/users/heykkyu/repos')
         .then(res => {
-          console.log(res);
-          this.list = res;
+          console.log(res.data);
+          this.repoList = res.data;
         })
-
+        .catch(error => console.log(error))
       }
     }
   }
