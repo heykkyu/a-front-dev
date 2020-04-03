@@ -1,12 +1,50 @@
 <template>
-  <div class="section-comp">
-    <div v-for="repo in repoList" :key="repo.id">
-      <div v-if="!repo.fork">
-        {{repo.name}} // {{repo.html_url}} // {{repo.description}} // {{repo.homepage}} // {{repo.updated_at}}
+  <div class="container">
+    <div class="resume-intro row">
+      <div class="col-md-10">
+        <h2 id="hello_header" class="section__title">Repository</h2>
+        <div>
+          <div v-for="repo in repoList" :key="repo.id">
+            <div v-if="!repo.fork">
+              <p>
+                <strong>{{repo.name}} </strong>{{repo.updated_at}}
+              </p>
+              <p>
+                {{repo.description}} 
+              </p>
+              <p>
+                <a target="_blank" :href="repo.html_url" v-text="repo.html_url" />
+                <a target="_blank" :href="repo.homepage" v-text="repo.homepage" />
+              </p>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="" class="section_btn site-btn">
+          <img src="./img_btn_icon.png" alt="">Download CV
+        </a> -->
       </div>
     </div>
   </div>
 </template>
+
+
+<style lang="scss" scoped>
+  .resume-intro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2 {
+      margin-bottom: 40px;
+      font-size: 36px;
+      line-height: 42px;
+      text-indent: 0px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+</style>
+
 
 <script>
 import axios from 'axios';
