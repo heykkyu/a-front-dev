@@ -1,24 +1,20 @@
-# front-portfolio
+## This Is
+My resume page coding with vue-cli.
 
-## Project setup
-```
-npm install
-```
+## Main Technology Stack
+- Vue.js (vue-cli)
+- SASS(SCSS)
+- Responsible Web
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Demo
+- site: https://heykkyu-frontdev.netlify.com
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
+## Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## License
+Jeongkyu Kim
+
+## Contact
+heykkyu@gmail.com
