@@ -10,13 +10,16 @@
           <p class="personal-profile__work">Frontend Developer</p>
           <div class="personal-profile__contacts">
             <dl class="contact-list contact-list__opacity-titles">
-              <dt>B/Year:</dt>
-              <dd>1991</dd>
-              <dt>Phone:</dt>
-              <dd><a href="tel:+821099419961">010-9941-9961</a></dd>
-              <dt>Email:</dt>
+              <!-- <dt>B/Year</dt>
+              <dd>1991</dd>-->
+              <dt>Phone</dt> 
+              <dd>
+                <a href="tel:+821099419961">🇰🇷 010-9941-9961</a><br>
+                <a href="tel:+17074097782">🇺🇸 707-409-7782</a>
+              </dd>
+              <dt>Email</dt>
               <dd><a href="mailto:heykkyu@gmail.com">heykkyu@gmail.com</a></dd>
-              <dt>Address:</dt>
+              <dt>Address</dt>
               <dd>Gangnam-gu, Seoul, South Korea</dd>
             </dl>
           </div>

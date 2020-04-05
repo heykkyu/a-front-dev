@@ -7,7 +7,10 @@
           A front web developer who struggle to stay ahead of others in order not to miss out on trends and not neglect to learn. There is no end to learning. This is my motto.
         </p>
         <!-- <a href="" class="section_btn site-btn">
-          <img src="./img_btn_icon.png" alt="">Download CV
+          DownLoad Eng CV
+        </a>
+         <a href="" class="section_btn site-btn" style="background-color:#3d58db;">
+          DownLoad Kor CV
         </a> -->
       </div>
     </div>
@@ -33,6 +36,21 @@ export default {
     }
     .section__description {
       margin-bottom: 30px;
+    }
+    .site-btn {
+      background-color: #3b5bf5;
+      height: 50px;
+      border-radius: 25px;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      padding: 15px;
+      min-width: 170px;
+      text-align: center;
+      display: inline-block;
+      color: #fff!important;
+      font-weight: 600;
+      overflow: hidden;
     }
   }
 </style>
