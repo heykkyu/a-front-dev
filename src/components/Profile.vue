@@ -1,5 +1,5 @@
 <template>
-  <header class="main-header">
+  <header id="me" class="main-header">
     <div class="container">
       <div class="row personal-profile">
         <div class="personal-profile__avatar">

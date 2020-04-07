@@ -5,9 +5,9 @@
         <div class="menu__wrapper d-none d-lg-block col-md-12">
           <nav class="">
             <ul>
+              <router-link to="#me">ME</router-link>
               <router-link to="#intro">INTRO</router-link>
-              <router-link to="#repository">INFOR</router-link>
-              <router-link to="#repository">PROJECTS</router-link>
+              <router-link to="#project">PROJECT</router-link>
               <router-link to="#repository">REPOSITORY</router-link>
             </ul>
           </nav>
@@ -26,6 +26,7 @@
 <style lang="scss" scoped>
 .menu {
   position: fixed;
+  background: rgba(0,0,0, 0.2);
   padding: 0;
   height: 0;
   top: 0;
@@ -40,7 +41,7 @@
   }
   .menu__wrapper {
     z-index: 1;
-    margin-top: 50px;
+    margin-top: 30px;
     transition: all .3s;
     nav {
       font-size: 14px;

@@ -3,6 +3,7 @@ My resume page coding with vue-cli.
 
 ## Main Technology Stack
 - Vue.js (vue-cli)
+- Github API
 - SASS(SCSS)
 - Responsible Web
 

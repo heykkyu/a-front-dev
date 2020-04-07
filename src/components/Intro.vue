@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="intro" class="container">
     <div class="resume-intro row">
       <div class="col-md-10">
         <h2 id="hello_header" class="section__title">Hello_</h2>

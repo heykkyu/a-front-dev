@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div id="career" class="container">
     <div class="row">
-      <div class="col-md-8 section__resume resume-list">
+      <div class="col-md-10 section__resume resume-list">
         <h3 class="resume-list_title">employment</h3>
         <div class="resume-list__block">
           <p class="resume-list__block-title">Lunasoft</p>
@@ -9,16 +9,16 @@
             2017.11 -
           </p>
           <p class="cal-date">
-            Total {{careerPeriod}} years
+            Total {{careerPeriod}} years career based on today.
           </p>
-          <p>AI chatbot industry leader.</p>
+          <p>Lunasoft is a partner company of Kakao & Naver with leading to design and develop conversational experiences across mobile, web and chatbots in Korea.</p>
           <p>
             <a href="https://lunasoft.co.kr">https://lunasoft.co.kr</a>
           </p>
         </div>
       </div>
 
-      <div class="col-md-8 section__resume resume-list">
+      <div class="col-md-10 section__resume resume-list">
         <h3 class="resume-list_title">education</h3>
         <div class="resume-list__block">
           <p class="resume-list__block-title">Sanmgyung Unversity </p>

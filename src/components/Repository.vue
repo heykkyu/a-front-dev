@@ -7,7 +7,9 @@
           <div v-for="repo in repoList" :key="repo.id">
             <div v-if="!repo.fork">
               <p>
-                <strong>{{repo.name}} </strong>{{repo.updated_at.substring(0,10)}}
+                <strong>{{repo.name}} </strong>
+                created_at {{repo.created_at.substring(0,10)}}
+                updated_at {{repo.updated_at.substring(0,10)}}
               </p>
               <p>
                 {{repo.description}} 
