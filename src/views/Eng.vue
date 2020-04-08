@@ -3,7 +3,7 @@
     <profile />
     <intro />
     <career />
-    <project />
+    <!-- <project /> -->
     <repository />
   </div>
 </template>
