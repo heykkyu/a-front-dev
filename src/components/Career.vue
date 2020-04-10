@@ -37,50 +37,50 @@
 </template>
 
 <style lang="scss" scoped>
-  .resume-list {
-    &:nth-child(2) { margin-top: 30px;}
-    .resume-list_title {
+.resume-list {
+  &:nth-child(2) { margin-top: 30px;}
+  .resume-list_title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #999;
+    margin-bottom: 40px;
+  }
+  .resume-list__block {
+    border-left: 2px solid rgba(31, 78, 233, 0.808);
+    padding-left: 25px;
+    padding-bottom: 50px;
+    &::before {
+      width: 12px;
+      height: 12px;
+      border: 2px solid rgba(17, 73, 158, 0.74);
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      background-color: #fff;
+      left: 10px;
+    }
+    .resume-list__block-title {
+      text-transform: uppercase;
+      color: rgba(17, 73, 158, 0.74);
       font-size: 14px;
       line-height: 20px;
-      letter-spacing: 5px;
-      text-transform: uppercase;
       font-weight: 700;
-      color: #999;
-      margin-bottom: 40px;
+      padding-bottom: 5px;
     }
-    .resume-list__block {
-      border-left: 2px solid rgba(31, 78, 233, 0.808);
-      padding-left: 25px;
-      padding-bottom: 50px;
-      &::before {
-        width: 12px;
-        height: 12px;
-        border: 2px solid rgba(17, 73, 158, 0.74);
-        position: absolute;
-        content: "";
-        border-radius: 50%;
-        background-color: #fff;
-        left: 10px;
-      }
-      .resume-list__block-title {
-        text-transform: uppercase;
-        color: rgba(17, 73, 158, 0.74);
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 700;
-        padding-bottom: 5px;
-      }
-      .resume-list__block-date {
-        font-size: 14px;
-        line-height: 20px;
-        color: #999;
-        padding-bottom: 10px;
-      }
-      .cal-date {
-        color: lightcoral;
-      }
+    .resume-list__block-date {
+      font-size: 14px;
+      line-height: 20px;
+      color: #999;
+      padding-bottom: 10px;
+    }
+    .cal-date {
+      color: lightcoral;
     }
   }
+}
 </style>
 
 <script>
