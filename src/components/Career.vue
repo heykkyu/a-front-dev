@@ -21,15 +21,15 @@
       <div class="col-md-10 section__resume resume-list">
         <h3 class="resume-list_title">education</h3>
         <div class="resume-list__block">
-          <p class="resume-list__block-title">Sanmgyung Unversity </p>
+          <p class="resume-list__block-title">Sanmgyung Unversity <br>(South Korea)</p>
           <p class="resume-list__block-date">2011.03 - 2017.08</p>
           <p>Business and Industrial Engineering</p>
           <p>4.1 / 4.5</p>
         </div>
         <div class="resume-list__block">
-          <p class="resume-list__block-title">University of Missouri St.Louis</p>
+          <p class="resume-list__block-title">University of Missouri St.Louis <br>(United States of America)</p>
           <p class="resume-list__block-date">2015.08 - 2016.05</p>
-          <p>1 Year Exchange Student Program (USA)</p>
+          <p>1 Year Exchange Student Program</p>
         </div>
       </div>
     </div>
