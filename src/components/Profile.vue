@@ -61,6 +61,9 @@ export default {
   margin-bottom: 40px;
   color: #fff;
   padding-top: 100px;
+  @media screen and (max-width: 990px) {
+    background-image: url('../assets/profil-pic-usa.jpeg');
+  }
   .personal-profile {
     flex-wrap: wrap;
     margin-right: -15px;
@@ -81,12 +84,18 @@ export default {
         position: relative;
         top: 40px;
       }
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
     }
     .personal-profile_text {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 66.66667%;
       flex: 0 0 66.66667%;
       max-width: 66.66667%;
+      @media screen and (max-width: 990px) {
+        margin-left: 15px;
+      }
       .personal-profile__name {
         font-size: 44px;
         line-height: 50px;

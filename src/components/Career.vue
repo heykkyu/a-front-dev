@@ -21,7 +21,7 @@
       <div class="col-md-10 section__resume resume-list">
         <h3 class="resume-list_title">education</h3>
         <div class="resume-list__block">
-          <p class="resume-list__block-title">Sanmgyung Unversity <br>(South Korea)</p>
+          <p class="resume-list__block-title">Sangmyung Unversity <br>(South Korea)</p>
           <p class="resume-list__block-date">2011.03 - 2017.08</p>
           <p>Business and Industrial Engineering</p>
           <p>4.1 / 4.5</p>

@@ -10,14 +10,13 @@
       :key="item.title"
     >
       <div class="row project-card">
-          <div class="col-md-6 col-lg-3 project-card__img">
+          <div class="col-md-6 col-lg-4 project-card__img">
             <img 
               :src="imgPath(item.title)"
-              @error="this.src='/image/dev.png'"
               alt="project-img"
             />
           </div>
-          <div class="col-md-6 col-lg-7 project-card__info">
+          <div class="col-md-6 col-lg-6 project-card__info">
             <h3 class="project-card__title">{{item.title}}</h3>
             <p class="project-card__description">
               <span v-html="item.desc"></span>
@@ -28,7 +27,11 @@
                 {{stack}}
               </li>
             </ul>
-            <a href="" class="project-card__link">heykkyu.com</a>
+            <template v-for="link in item.link">
+              <a :href="link" class="project-card__link" target="_blank">
+                {{link.length > 20 ? 'amazon-short-url' :link}}
+              </a>
+            </template>
           </div>
         </div>
     </div>
@@ -41,11 +44,11 @@ export default {
     return {
       projectList: [
         {title: 'front-dev', desc: 'Resume Page of Jeongkyu Kim', stack: ['vue.js', 'scss', 'Javascript', 'github API'], link: ['heykkyu.com']},
-        {title: 'mobile web shoppingmall', desc: '모바일 쇼핑 웹 페이지 구축 진행', stack: ['vue.js', 'scss', 'Javascript', 'github API'], link: ['https://www.amazon.com/clouddrive/share/5P2UUP3nwTSMAcpysfz8f3b6LGfansPEKYlGtjqffud']},
-        {title: 'cookierun font', desc: '쿠키런폰트 PC/Mobile 반응형 페이지 구현 ', stack: ['vue.js', 'scss', 'Javascript', 'github API'], link: ['heykkyu.com']},
-        {title: 'parcel return', desc: '카카오톡을 통해 쇼핑몰 공용 반품&회수 페이지 구현 <br> -	전 페이지 퍼블리싱<br>-	카카오톡 인앱 브라우저 및 모바일 기기 최적화 및 호환성 고려 개발<br>-	반품 섹션별 SPA PAGE 구성', stack: ['vue.js', 'scss', 'Javascript', 'php/Laravel'], link: ['heykkyu.com']},
-        {title: 'chatbot admin page', desc: '상담톡 파트너사들을 위한 어드민 페이지 리뉴얼 ', stack: ['vue.js', 'scss', 'Javascript', 'github API'], link: ['heykkyu.com']},
-        {title: 'image error', desc: '오류이미지 검출 로직 서비스 리팩토링', stack: ['vue.js', 'scss', 'Javascript', 'github API'], link: ['heykkyu.com']},
+        {title: 'online-store', desc: '모바일 쇼핑 웹 페이지 구축 진행', stack: ['vue.js', 'scss', 'Javascript', 'github API'], link: ['https://www.amazon.com/clouddrive/share/5P2UUP3nwTSMAcpysfz8f3b6LGfansPEKYlGtjqffud']},
+        {title: 'cookierun-font', desc: '쿠키런폰트 PC/Mobile 반응형 페이지 구현 ', stack: ['vue.js', 'scss', 'Javascript', 'build'], link: ['cookierunfont.com']},
+        {title: 'parcel-return', desc: '카카오톡을 통해 쇼핑몰 공용 반품&회수 페이지 구현 <br> -	전 페이지 퍼블리싱<br>-	카카오톡 인앱 브라우저 및 모바일 기기 최적화 및 호환성 고려<br>-	반품 섹션별 SPA PAGE 구성', stack: ['vue.js', 'scss', 'Javascript', 'php/Laravel'], link: ''},
+        {title: 'chatbot-page', desc: '상담톡 파트너사들을 위한 어드민 페이지 리뉴얼 ', stack: ['vue.js', 'scss', 'Javascript'], link: ''},
+        {title: 'image-error', desc: '오류이미지 검출 로직 서비스 리팩토링', stack: ['vue.js', 'php/Laravel', 'scss', 'sql'], link: ''},
       ]
     }
   },
@@ -117,7 +120,7 @@ export default {
         font-size: 14px;
         line-height: 20px;
         float: right;
-        color: #1f75fe;
+        color: #1f75fe !important;
       }
     }
   }

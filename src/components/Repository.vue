@@ -44,6 +44,9 @@
     p {
       margin-bottom: 30px;
     }
+    a {
+      color: #1f75fe !important;
+    }
   }
 </style>
 
