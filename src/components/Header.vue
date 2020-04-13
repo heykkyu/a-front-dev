@@ -5,8 +5,8 @@
         <div class="menu__wrapper d-none d-lg-block col-md-12">
           <nav class="">
             <ul>
-              <router-link to="#me">HELLO</router-link>
-              <router-link to="#intro">PROFILE</router-link>
+              <router-link to="#hello">HELLO</router-link>
+              <router-link to="#profile">PROFILE</router-link>
               <router-link to="#project">PROJECT</router-link>
               <router-link to="#repository">REPOSITORY</router-link>
             </ul>
@@ -30,12 +30,10 @@
         </div>
         <nav class="mobile-menu__wrapper">
           <ul>
-            <li><a href="#hello">Hello</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonials">testimonials</a></li>
-            <li><a href="#blog">blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <router-link to="#hello">HELLO</router-link>
+            <router-link to="#profile">PROFILE</router-link>
+            <router-link to="#project">PROJECT</router-link>
+            <router-link to="#repository">REPOSITORY</router-link>
           </ul>
         </nav>
       </div>

@@ -1,148 +1,98 @@
 <template>
-  <header id="me" class="main-header">
-    <div class="container">
-      <div class="row personal-profile">
-        <div class="personal-profile__avatar">
-          <img class="" src="../assets/profil-pic-usa.jpeg" alt="avatar">
-        </div>
-        <div class="personal-profile_text">
-          <p class="personal-profile__name">Jeongkyu Kim</p>
-          <p class="personal-profile__work">Frontend Developer</p>
-          <div class="personal-profile__contacts">
-            <dl class="contact-list contact-list__opacity-titles">
-              <!-- <dt>B/Year</dt>
-              <dd>1991</dd>-->
-              <dt>Phone</dt> 
-              <dd>
-                <a href="tel:+821099419961">🇰🇷 010-9941-9961</a><br>
-                <a href="tel:+17074097782">🇺🇸 707-409-7782</a>
-              </dd>
-              <dt>Email</dt>
-              <dd><a href="mailto:heykkyu@gmail.com">heykkyu@gmail.com</a></dd>
-              <dt>Address</dt>
-              <dd>Gangnam-gu, Seoul, South Korea</dd>
-            </dl>
-          </div>
-          <p class="personal-profile__social">
-            <a href="//github.com/heykkyu?tab=repositories" target="_blank">
-              <img src="../assets/logo-github.png"/>
-            </a>
-            <a href="//www.linkedin.com/in/heykkyu" target="_blank">
-             <img src="../assets/logo-linkedin.png"/>
-            </a>
-            <a href="//blog.naver.com/heysiki" target="_blank">
-              <img src="../assets/logo-naverblog.png"/>
-            </a>
+  <div id="profile" class="container">
+    <div class="row">
+      <div class="col-md-10 section__resume resume-list">
+        <h3 class="resume-list_title">employment</h3>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Lunasoft</p>
+          <p class="resume-list__block-date">
+            2017.11 -
+          </p>
+          <p class="cal-date">
+            Total {{careerPeriod}} years career based on today.
+          </p>
+          <p>Lunasoft is a partner company of Kakao & Naver with leading to design and develop conversational experiences across mobile, web and chatbots in Korea.</p>
+          <p>
+            <a href="https://lunasoft.co.kr">https://lunasoft.co.kr</a>
           </p>
         </div>
       </div>
+
+      <div class="col-md-10 section__resume resume-list">
+        <h3 class="resume-list_title">education</h3>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Sangmyung Unversity <br>(South Korea)</p>
+          <p class="resume-list__block-date">2011.03 - 2017.08</p>
+          <p>Business and Industrial Engineering</p>
+          <p>4.1 / 4.5</p>
+        </div>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">University of Missouri St.Louis <br>(United States of America)</p>
+          <p class="resume-list__block-date">2015.08 - 2016.05</p>
+          <p>1 Year Exchange Student Program</p>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
 </template>
+
+<style lang="scss" scoped>
+.resume-list {
+  &:nth-child(2) { margin-top: 30px;}
+  .resume-list_title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #999;
+    margin-bottom: 40px;
+  }
+  .resume-list__block {
+    border-left: 2px solid rgba(31, 78, 233, 0.808);
+    padding-left: 25px;
+    padding-bottom: 50px;
+    &::before {
+      width: 12px;
+      height: 12px;
+      border: 2px solid rgba(17, 73, 158, 0.74);
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      background-color: #fff;
+      left: 10px;
+    }
+    .resume-list__block-title {
+      text-transform: uppercase;
+      color: rgba(17, 73, 158, 0.74);
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      padding-bottom: 5px;
+    }
+    .resume-list__block-date {
+      font-size: 14px;
+      line-height: 20px;
+      color: #999;
+      padding-bottom: 10px;
+    }
+    .cal-date {
+      color: lightcoral;
+    }
+  }
+}
+</style>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  computed: {
+    careerPeriod () {
+      const date = new Date();
+      const calYear = date.getFullYear() -2017 -1;
+      const calMonth = date.getMonth() -11;
+
+      return `${calYear}.${Math.abs(calMonth) -3}`;
+    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-.main-header {
-  background: linear-gradient(34deg, rgba(100,46,152,1) 14%, rgba(0,212,255,1) 92%);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 40px;
-  color: #fff;
-  padding-top: 100px;
-  @media screen and (max-width: 990px) {
-    background-image: url('../assets/profil-pic-usa.jpeg');
-  }
-  .personal-profile {
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    .personal-profile__avatar {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33333%;
-      flex: 0 0 33.33333%;
-      max-width: 33.33333%;
-      img {
-        border-radius: 5px;
-        box-shadow: 0 0 27px rgba(96,96,96,.34);
-        width: 90%;
-        height: 380px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        margin-top: 10px;
-        position: relative;
-        top: 40px;
-      }
-      @media screen and (max-width: 990px) {
-        display: none;
-      }
-    }
-    .personal-profile_text {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 66.66667%;
-      flex: 0 0 66.66667%;
-      max-width: 66.66667%;
-      @media screen and (max-width: 990px) {
-        margin-left: 15px;
-      }
-      .personal-profile__name {
-        font-size: 44px;
-        line-height: 50px;
-        font-weight: 700;
-        margin-top: 40px;
-        margin-bottom: 10px;
-      }
-      .personal-profile__work {
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 40px;
-      }
-      .personal-profile__contacts {
-        margin-bottom: 20px;
-        .contact-list {
-          font-size: 16px;
-          line-height: 24px;
-          dt {
-            opacity: .4;
-            float: left;
-            font-weight: 700;
-            text-transform: uppercase;
-          }
-          dd {
-            padding-left: 100px;
-            margin-bottom: 15px;
-          }
-        }
-      }
-      .personal-profile__social {
-        margin-bottom: 35px;
-        a {
-          font-size: 24px;
-          margin-right: 15px;
-            &:nth-child(1) img {
-              max-width: 80px;
-            }
-            &:nth-child(2) img {
-              max-width: 90px;
-            }
-            &:nth-child(3) img {
-              max-width: 110px;
-            }
-        }
-      }
-    }
-  }
-}
-
-</style>

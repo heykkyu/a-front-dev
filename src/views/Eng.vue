@@ -1,8 +1,8 @@
 <template>
   <div class="Resume">
-    <profile />
+    <hello />
     <intro />
-    <career />
+    <profile />
     <project />
     <repository />
   </div>
@@ -11,18 +11,18 @@
 
 <script>
 // @ is an alias to /src
-import Profile from '@/components/Profile.vue'
+import Hello from '@/components/Hello.vue'
 import Intro from '@/components/Intro.vue'
-import Career from '@/components/Career.vue'
+import Profile from '@/components/Profile.vue'
 import Project from '@/components/Project.vue'
 import Repository from '@/components/Repository.vue'
 
 export default {
   name: 'home',
   components: {
-    Profile,
+    Hello,
     Intro,
-    Career,
+    Profile,
     Project,
     Repository
   }
