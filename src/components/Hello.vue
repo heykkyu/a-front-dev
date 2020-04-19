@@ -25,13 +25,13 @@
           </div>
           <p class="personal-profile__social">
             <a href="//github.com/heykkyu?tab=repositories" target="_blank">
-              <img src="../assets/logo-github.png"/>
+              <img src="/image/git.png"/>
             </a>
             <a href="//www.linkedin.com/in/heykkyu" target="_blank">
-             <img src="../assets/logo-linkedin.png"/>
+             <img src="/image/linkedin.png"/>
             </a>
             <a href="//blog.naver.com/heysiki" target="_blank">
-              <img src="../assets/logo-naverblog.png"/>
+              <img src="/image/blog.png"/>
             </a>
           </p>
         </div>
@@ -130,15 +130,13 @@ export default {
         a {
           font-size: 24px;
           margin-right: 15px;
-            &:nth-child(1) img {
-              max-width: 80px;
+          img {
+            max-width: 30px;
+            opacity: .5;
+            &:nth-child(1) {
+              max-width: 25px;
             }
-            &:nth-child(2) img {
-              max-width: 90px;
-            }
-            &:nth-child(3) img {
-              max-width: 110px;
-            }
+          }
         }
       }
     }
