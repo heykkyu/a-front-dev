@@ -51,6 +51,7 @@
   z-index: 100;
   width: 100%;
   height: 70px;
+  margin-bottom: 100px;
   transition: all .5s;
   color: #fff;
   &.active {

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row personal-profile">
         <div class="personal-profile__avatar">
-          <img class="" src="../assets/profil-pic-usa.jpeg" alt="avatar">
+          <img class="" src="/image/profile-pic-apple.png" alt="avatar">
         </div>
         <div class="personal-profile_text">
           <p class="personal-profile__name">Jeongkyu Kim</p>
@@ -62,7 +62,7 @@ export default {
   color: #fff;
   padding-top: 100px;
   @media screen and (max-width: 990px) {
-    background-image: url('../assets/profil-pic-usa.jpeg');
+    background: linear-gradient(34deg, rgba(100,46,152,1) 14%, rgba(0,212,255,1) 92%);
   }
   .personal-profile {
     flex-wrap: wrap;
@@ -95,6 +95,8 @@ export default {
       max-width: 66.66667%;
       @media screen and (max-width: 990px) {
         margin-left: 15px;
+        flex: none;
+        max-width: 100%;
       }
       .personal-profile__name {
         font-size: 44px;
