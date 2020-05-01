@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row personal-profile">
         <div class="personal-profile__avatar">
-          <img class="" src="/image/profile-pic-apple.png" alt="avatar">
+          <img class="" src="//res.cloudinary.com/dx8hdbmhz/image/upload/v1587703210/profile-pic-apple_hcvrbb.png" alt="avatar">
         </div>
         <div class="personal-profile_text">
           <p class="personal-profile__name">Jeongkyu Kim</p>
