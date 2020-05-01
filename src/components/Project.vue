@@ -29,7 +29,7 @@
           </ul>
           <template v-for="link in item.link">
             <a :href="link" class="project-card__link" target="_blank" :key="link">
-              {{link.length > 20 ? 'amazon-short-url' :link}}
+              {{link.length > 30 ? 'amazon-short-url' :link}}
             </a>
           </template>
         </div>
@@ -43,9 +43,9 @@ export default {
   data () {
     return {
       projectList: [
-        {title: 'front-dev', desc: 'Resume Page of Jeongkyu Kim', stack: ['Vue.js', 'Sass(Scss)', 'Javascript', 'Netlify Page', 'github API'], link: ['heykkyu.com']},
+        {title: 'front-dev', desc: 'Resume Page of Jeongkyu Kim', stack: ['Vue.js', 'Sass(Scss)', 'Javascript', 'Netlify Page', 'github API'], link: ['https://heykkyu.com']},
         {title: 'online-store', desc: '모바일 쇼핑 웹 페이지 구축 진행', stack: ['Angular', 'RxJS'], link: ['https://www.amazon.com/clouddrive/share/5P2UUP3nwTSMAcpysfz8f3b6LGfansPEKYlGtjqffud']},
-        {title: 'cookierun-font', desc: '쿠키런폰트 PC/Mobile 반응형 페이지 구현 ', stack: ['Vue.js', 'fullpage.js', 'Sass(Scss)', 'Javascript', 'Project Build'], link: ['cookierunfont.com']},
+        {title: 'cookierun-font', desc: '쿠키런폰트 PC/Mobile 반응형 페이지 구현 ', stack: ['Vue.js', 'fullpage.js', 'Sass(Scss)', 'Javascript', 'Project Build'], link: ['https://cookierunfont.com']},
         {title: 'parcel-return', desc: '카카오톡을 통해 쇼핑몰 공용 반품&회수 페이지 구현 <br> -	전 페이지 퍼블리싱<br>-	카카오톡 인앱 브라우저 및 모바일 기기 최적화 및 호환성 고려<br>-	반품 섹션별 SPA PAGE 구성', stack: ['vue.js', 'scss', 'Javascript', 'php/Laravel'], link: ''},
         {title: 'chatbot-page', desc: '상담톡 파트너사들을 위한 어드민 페이지 리뉴얼 ', stack: ['Vue.js', 'Sass(Scss)', 'Javascript'], link: ''},
         {title: 'image-error', desc: '오류이미지 검출 로직 서비스 리팩토링', stack: ['Vue.js', 'php/Laravel', 'SQL', 'Sass(Scss)' ], link: ''},
