@@ -9,7 +9,7 @@
 
 <style lang="scss">
 @import "@/assets/_style.scss";
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 </style>
 
 <script>
