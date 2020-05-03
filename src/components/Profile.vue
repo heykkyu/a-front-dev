@@ -91,7 +91,7 @@ export default {
       const calYear = date.getFullYear() -2017 -1;
       const calMonth = date.getMonth() -11;
 
-      return `${calYear}.${Math.abs(calMonth) -3}`;
+      return `${calYear}.${Math.abs(calMonth) -2}`;
     }
   }
 }
