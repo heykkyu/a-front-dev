@@ -9,7 +9,7 @@
             2017.11 -
           </p>
           <p class="cal-date">
-            Total {{careerPeriod}} years career based on today.
+            Total [{{careerPeriod}}] years career based on today.
           </p>
           <p>Lunasoft is a partner company of Kakao & Naver with leading to design and develop conversational experiences across mobile, web and chatbots in Korea.</p>
           <p>
@@ -87,11 +87,12 @@
 export default {
   computed: {
     careerPeriod () {
-      const date = new Date();
-      const calYear = date.getFullYear() -2017 -1;
-      const calMonth = date.getMonth() -11;
+      var now = new Date();
+      var cri = new Date(2017,11,27);
 
-      return `${calYear}.${Math.abs(calMonth) -2}`;
+      const year = now.getFullYear() - cri.getFullYear() -1;
+      const month = Math.abs(now.getMonth() - (cri.getMonth() + 1));
+      return `${year}.${month}`;
     }
   }
 }
