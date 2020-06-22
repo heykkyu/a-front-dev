@@ -17,7 +17,7 @@
                 <a target="_blank" :href="repo.homepage" v-text="repo.homepage" />
               </li>
               <li class="date">
-                 {{repo.created_at.substring(0,10)}} / updated_at {{repo.updated_at.substring(0,10)}}
+                 created_at: {{repo.created_at.substring(0,10)}} / updated_at: {{repo.updated_at.substring(0,10)}}
               </li>
               <hr>
             </ul>
@@ -51,7 +51,7 @@
       margin-left: -20px;
     }
     .date {
-      color: lightgray;
+      color: gray;
       font-size: 80%;
     }
       a {
