@@ -18,7 +18,7 @@
                 <a href="tel:+17074097782">🇺🇸 707-409-7782</a>
               </dd>
               <dt>Email</dt>
-              <dd><a href="mailto:heykkyu@gmail.com">heykkyu@gmail.com</a></dd>
+              <dd><a href="mailto:heykkyu@gmail.com" target="_blank">heykkyu@gmail.com</a></dd>
               <dt>Address</dt>
               <dd>Gangnam-gu, Seoul, South Korea</dd>
             </dl>

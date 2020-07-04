@@ -42,12 +42,20 @@
 <style lang="scss" scoped>
 .header {
   .dev-page {
-    a {
-      position: fixed;
-      top: 3%;
-      right: 5%;
-      z-index: 9999;
-      font-weight: bold;
+    position: fixed;
+    padding-top: 30px;
+    right: 5%;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
+    text-align: right;
+    font-weight: bold;
+    @media screen and (max-width: 990px) {
+      background: rgba(0, 0, 0, 0.2); 
+      top: 0;
+      right: 0;
+      padding-right: 5%;
+      padding-top: 13px;
     }
   }
   .menu {
