@@ -6,10 +6,7 @@
         <div class="resume-list__block">
           <p class="resume-list__block-title">Lunasoft</p>
           <p class="resume-list__block-date">
-            2017.11 -
-          </p>
-          <p class="cal-date">
-            Total [{{careerPeriod}}] years career based on today.
+            2017.11 - 2020.08
           </p>
           <p>Lunasoft is a partner company of Kakao & Naver with leading to design and develop conversational experiences across mobile, web and chatbots in Korea.</p>
           <p>
@@ -82,18 +79,3 @@
   }
 }
 </style>
-
-<script>
-export default {
-  computed: {
-    careerPeriod () {
-      var now = new Date();
-      var cri = new Date(2017,11,27);
-
-      const year = now.getFullYear() - cri.getFullYear() -1;
-      const month = Math.abs(now.getMonth() - (cri.getMonth() + 1));
-      return `${year}.${month}`;
-    }
-  }
-}
-</script>
