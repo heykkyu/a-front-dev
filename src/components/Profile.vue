@@ -2,31 +2,78 @@
   <div id="profile" class="container">
     <div class="row">
       <div class="col-md-10 section__resume resume-list">
-        <h3 class="resume-list_title">employment</h3>
+        <h2 class="section__title">Employment</h2>
         <div class="resume-list__block">
-          <p class="resume-list__block-title">Lunasoft</p>
-          <p class="resume-list__block-date">
-            2017.11 - 2020.08
+          <p class="resume-list__block-title">
+            GREY GROUP
+            <small>Seoul, Korea</small>
           </p>
-          <p>Lunasoft is a partner company of Kakao & Naver with leading to design and develop conversational experiences across mobile, web and chatbots in Korea.</p>
+          <p class="resume-list__block-date">
+            Full-Time / 2020.08 - 
+          </p>
+          <span>FrontEnd Developer</span> 
           <p>
-            <a href="https://lunasoft.co.kr">https://lunasoft.co.kr</a>
+            Grey Group is a global advertising and marketing agency with headquarters in New York City. <br/>
+            And I am working for A- Korea team as a frontend developer.
+          </p>
+          <p>
+            <a class="site-btn" href="https://grey.com" target="_blank">https://grey.com</a>
+          </p>
+        </div>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">
+            Lunasoft
+            <small>Seoul, Korea</small>
+          </p>
+          <p class="resume-list__block-date">
+            Full-Time / 2017.11 - 2020.08
+          </p>
+          <strong>FrontEnd Developer</strong>
+          <p>Lunasoft is a partner company of Kakao & Naver with leading to design and develop conversational experiences across mobile, web and chatbots in Korea.</p>
+          
+          <p>
+            <a class="site-btn" href="https://lunasoft.co.kr" target="_blank">https://lunasoft.co.kr</a>
+          </p>
+        </div>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">
+            DevSisters
+            <small>Seoul, Korea</small>
+          </p>
+          <p class="resume-list__block-date">
+            Freelancer / 2019.08 - 2019.09
+          </p>
+          <strong>FrontEnd Developer</strong>
+          <p>DevSisters Inc. is a Korean game developer whose main business is mobile games and character products.</p>
+          <p>
+            <a class="site-btn" href="https://cookierunfont.com" target="_blank">https://cookierunfont.com</a>
           </p>
         </div>
       </div>
 
       <div class="col-md-10 section__resume resume-list">
-        <h3 class="resume-list_title">education</h3>
+        <h2 class="section__title">education</h2>
         <div class="resume-list__block">
-          <p class="resume-list__block-title">Sangmyung Unversity <br>(South Korea)</p>
+          <p class="resume-list__block-title">
+            Sangmyung Unversity
+            <small>Cheonan, Korea</small>
+          </p>
           <p class="resume-list__block-date">2011.03 - 2017.08</p>
-          <p>Business and Industrial Engineering</p>
-          <p>4.1 / 4.5</p>
+          <p>Business and Industrial Engineering<br/>
+              4.1 / 4.5 Scores
+          </p>
+          <p>
+            <a class="site-btn" href="https://www.smu.ac.kr/eng1" target="_blank">https://www.smu.ac.kr/eng1</a>
+          </p>
         </div>
         <div class="resume-list__block">
-          <p class="resume-list__block-title">University of Missouri St.Louis <br>(United States of America)</p>
+          <p class="resume-list__block-title">University of Missouri St.Louis
+            <small>St.Louis, United Sates</small></p>
           <p class="resume-list__block-date">2015.08 - 2016.05</p>
           <p>1 Year Exchange Student Program</p>
+          <p>
+            <a class="site-btn" href="https://www.umsl.edu/" target="_blank">https://www.umsl.edu</a>
+          </p>
         </div>
       </div>
     </div>
@@ -44,6 +91,7 @@
     font-weight: 700;
     color: #999;
     margin-bottom: 40px;
+   
   }
   .resume-list__block {
     border-left: 2px solid rgba(31, 78, 233, 0.808);
@@ -59,19 +107,37 @@
       background-color: #fff;
       left: 10px;
     }
+    small {
+      padding-left: 10px;
+      color: #222;
+    }
     .resume-list__block-title {
       text-transform: uppercase;
       color: rgba(17, 73, 158, 0.74);
-      font-size: 14px;
+      font-size: 17px;
       line-height: 20px;
       font-weight: 700;
-      padding-bottom: 5px;
+      margin-bottom: 0;
     }
     .resume-list__block-date {
       font-size: 14px;
       line-height: 20px;
       color: #999;
       padding-bottom: 10px;
+    }
+    .site-btn {
+      background-color: #3b5bf5;
+      height: 35px;
+      border-radius: 25px;
+      font-size: 14px;
+      line-height: 4px;
+      padding: 15px;
+      text-align: center;
+      display: inline-block;
+      color: #fff!important;
+      font-weight: 600;
+      overflow: hidden;
+      border:none;
     }
     .cal-date {
       color: lightcoral;

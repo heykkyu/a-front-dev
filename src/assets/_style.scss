@@ -11,3 +11,20 @@
 a {
   word-break: break-all;
 }
+
+.section__title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.boxshadow-tab {
+  transition: box-shadow .3s;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}

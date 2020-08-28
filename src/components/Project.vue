@@ -2,36 +2,22 @@
   <div id="project" class="container section">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="section__title">Projects_</h2>
+        <h2 class="section__title">Projects</h2>
       </div>
     </div>
-    <div class="portfolio-cards"
-      v-for="item in projectList"
-      :key="item.title"
-    >
-      <div class="row project-card col-md-10">
-        <div class="col-md-6 col-lg-4 project-card__img">
-          <img 
+    <div class="portfolio-cards">
+      <div class="row project-card col-md-12 boxshadow-tab">
+        <div class="col-md-8 col-lg-10 project-card__info">
+          <h3 class="project-card__title">More specific informations what did I?</h3>
+          <p class="project-card__description">
+            Contact me to get a resume.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-2 project-card__img">
+          <!-- <img 
             :src="imgPath(item.title)"
             alt="project-img"
-          />
-        </div>
-        <div class="col-md-6 col-lg-8 project-card__info">
-          <h3 class="project-card__title">{{item.title}}</h3>
-          <p class="project-card__description">
-            <span v-html="item.desc"></span>
-          </p>
-          <p class="project-card__stack">Used stack:</p>
-          <ul class="tags">
-            <li v-for="stack in item.stack" :key="stack">
-              {{stack}}
-            </li>
-          </ul>
-          <template v-for="link in item.link">
-            <a :href="link" class="project-card__link" target="_blank" :key="link">
-              {{link.length > 30 ? 'amazon-short-url' :link}}
-            </a>
-          </template>
+          /> -->
         </div>
       </div>
     </div>
@@ -42,14 +28,6 @@
 export default {
   data () {
     return {
-      projectList: [
-        {title: 'front-dev', desc: 'Resume Page of Jeongkyu Kim', stack: ['Vue.js', 'Javascript', 'Sass(Scss)', 'Netlify', 'github API'], link: ['https://heykkyu.com']},
-        {title: 'online-store', desc: '모바일 쇼핑 웹 페이지 구축 진행', stack: ['Angular9', 'Angular-Cli', 'Javascript', 'Sass(Scss)'], link: ['https://www.amazon.com/clouddrive/share/5P2UUP3nwTSMAcpysfz8f3b6LGfansPEKYlGtjqffud']},
-        {title: 'cookierun-font', desc: '쿠키런폰트 PC/Mobile 반응형 페이지 구현 ', stack: ['Vue.js', 'fullpage.js', 'Javascript', 'Sass(Scss)', 'Project Build'], link: ['https://cookierunfont.com']},
-        {title: 'parcel-return', desc: '카카오톡을 통해 쇼핑몰 공용 반품&회수 페이지 구현 <br> -	전 페이지 퍼블리싱<br>-	카카오톡 인앱 브라우저 및 모바일 기기 최적화 및 호환성 고려<br>-	반품 섹션별 SPA PAGE 구성', stack: ['Vue.js', 'Javascript', 'Sass(Scss)', 'php/Laravel'], link: ''},
-        {title: 'chatbot-page', desc: '상담톡 파트너사들을 위한 어드민/상담센터 페이지 리뉴얼 ', stack: ['Vue.js', 'Javascript', 'Sass(Scss)', 'php/Laravel'], link: ''},
-        {title: 'image-error', desc: '오류이미지 검출 로직 서비스 리팩토링', stack: ['Vue.js', 'Sass(Scss)', 'php/Laravel', 'SQL' ], link: ''},
-      ]
     }
   },
   methods: {
@@ -64,18 +42,8 @@ export default {
 <style lang="scss" scoped>
 .container {
   margin-top: 100px;
-  .section__title {
-    margin-bottom: 40px;
-    font-size: 36px;
-    line-height: 42px;
-    text-indent: 0px;
-  }
   .project-card {
     margin-left: 0;
-    margin-bottom: 40px;
-    transition: box-shadow .3s;
-    border: 1px solid #f1f1f1;
-    margin-right: 0;
     .project-card__img {
       img {
         width: 100%;
@@ -84,7 +52,8 @@ export default {
         max-height: 370px;
         position: absolute;
         top: 50%;
-        transform: translate(-15px, -50%);
+        right: 10%;
+        transform: translateY(-50%);
         @media screen and (max-width: 990px) {
           position: relative;
           top: unset;
@@ -95,15 +64,9 @@ export default {
     }
     .project-card__info {
       padding: 50px 5px 40px 30px;
-      // background-size: 25%;
-      // background-position: left;
-      // background-repeat: no-repeat;
-      // padding-left: 30%;
-      // &.front-dev { background-image: url('../assets/front-dev.png');}
       .project-card__title {
         font-size: 18px;
         line-height: 30px;
-        text-transform: uppercase;
         margin-bottom: 15px;
         font-weight: 700;
       }
@@ -124,6 +87,9 @@ export default {
           margin-right: 10px;
           border-radius: 3px;
           margin-top: 5px;
+          &:nth-child(1) {
+            margin-left: 10px;
+          }
         }
       }
       .project-card__link {

@@ -10,13 +10,6 @@
           <p class="personal-profile__work">Frontend Developer</p>
           <div class="personal-profile__contacts">
             <dl class="contact-list contact-list__opacity-titles">
-              <!-- <dt>B/Year</dt>
-              <dd>1991</dd>-->
-              <dt>Phone</dt> 
-              <dd>
-                <a href="tel:+821099419961">🇰🇷 010-9941-9961</a><br>
-                <a href="tel:+17074097782">🇺🇸 707-409-7782</a>
-              </dd>
               <dt>Email</dt>
               <dd><a href="mailto:heykkyu@gmail.com" target="_blank">heykkyu@gmail.com</a></dd>
               <dt>Address</dt>
@@ -93,6 +86,7 @@ export default {
       -ms-flex: 0 0 66.66667%;
       flex: 0 0 66.66667%;
       max-width: 66.66667%;
+      margin-top: 40px;
       @media screen and (max-width: 990px) {
         margin-left: 15px;
         flex: none;
@@ -115,6 +109,7 @@ export default {
         .contact-list {
           font-size: 16px;
           line-height: 24px;
+          margin-top: 70px;
           dt {
             opacity: .4;
             float: left;
