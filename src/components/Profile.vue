@@ -5,23 +5,6 @@
         <h2 class="section__title">Employment</h2>
         <div class="resume-list__block">
           <p class="resume-list__block-title">
-            GREY GROUP
-            <small>Seoul, Korea</small>
-          </p>
-          <p class="resume-list__block-date">
-            Full-Time / 2020.08 - 
-          </p>
-          <span>FrontEnd Developer</span> 
-          <p>
-            Grey Group is a global advertising and marketing agency with headquarters in New York City. <br/>
-            And I am working for A- Korea team as a frontend developer.
-          </p>
-          <p>
-            <a class="site-btn" href="https://grey.com" target="_blank">https://grey.com</a>
-          </p>
-        </div>
-        <div class="resume-list__block">
-          <p class="resume-list__block-title">
             Lunasoft
             <small>Seoul, Korea</small>
           </p>
