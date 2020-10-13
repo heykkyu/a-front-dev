@@ -43,10 +43,8 @@
 .header {
   .dev-page {
     position: fixed;
-    padding-top: 30px;
+    padding-top: 25px;
     right: 5%;
-    width: 100%;
-    height: 50px;
     z-index: 9999;
     text-align: right;
     font-weight: bold;
