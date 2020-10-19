@@ -2,7 +2,7 @@
   <div id="project" class="container section">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="section__title">Projects</h2>
+        <h2 class="title">Projects</h2>
       </div>
     </div>
     <div class="portfolio-cards">

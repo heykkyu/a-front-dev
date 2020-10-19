@@ -2,7 +2,7 @@
   <div id="profile" class="container">
     <div class="row">
       <div class="col-md-10 section__resume resume-list">
-        <h2 class="section__title">Employment</h2>
+        <h2 class="title">Employment</h2>
         <div class="resume-list__block">
           <p class="resume-list__block-title">
             Lunasoft
@@ -15,7 +15,7 @@
           <p>Lunasoft is a partner company of Kakao & Naver with leading to design and develop conversational experiences across mobile, web and chatbots in Korea.</p>
           
           <p>
-            <a class="site-btn" href="https://lunasoft.co.kr" target="_blank">https://lunasoft.co.kr</a>
+            <a class="url" href="https://lunasoft.co.kr" target="_blank">https://lunasoft.co.kr</a>
           </p>
         </div>
         <div class="resume-list__block">
@@ -29,13 +29,13 @@
           <strong>FrontEnd Developer</strong>
           <p>DevSisters Inc. is a Korean game developer whose main business is mobile games and character products.</p>
           <p>
-            <a class="site-btn" href="https://cookierunfont.com" target="_blank">https://cookierunfont.com</a>
+            <a class="url" href="https://cookierunfont.com" target="_blank">https://cookierunfont.com</a>
           </p>
         </div>
       </div>
 
       <div class="col-md-10 section__resume resume-list">
-        <h2 class="section__title">education</h2>
+        <h2 class="title">education</h2>
         <div class="resume-list__block">
           <p class="resume-list__block-title">
             Sangmyung Unversity
@@ -46,7 +46,7 @@
               4.1 / 4.5 Scores
           </p>
           <p>
-            <a class="site-btn" href="https://www.smu.ac.kr/eng1" target="_blank">https://www.smu.ac.kr/eng1</a>
+            <a class="url" href="https://www.smu.ac.kr/eng1" target="_blank">https://www.smu.ac.kr/eng1</a>
           </p>
         </div>
         <div class="resume-list__block">
@@ -55,7 +55,7 @@
           <p class="resume-list__block-date">2015.08 - 2016.05</p>
           <p>1 Year Exchange Student Program</p>
           <p>
-            <a class="site-btn" href="https://www.umsl.edu/" target="_blank">https://www.umsl.edu</a>
+            <a class="url" href="https://www.umsl.edu/" target="_blank">https://www.umsl.edu</a>
           </p>
         </div>
       </div>
@@ -108,20 +108,7 @@
       color: #999;
       padding-bottom: 10px;
     }
-    .site-btn {
-      background-color: #3b5bf5;
-      height: 35px;
-      border-radius: 25px;
-      font-size: 14px;
-      line-height: 4px;
-      padding: 15px;
-      text-align: center;
-      display: inline-block;
-      color: #fff!important;
-      font-weight: 600;
-      overflow: hidden;
-      border:none;
-    }
+   
     .cal-date {
       color: lightcoral;
     }

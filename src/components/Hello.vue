@@ -41,7 +41,7 @@
   background-position: 50%;
   background-size: cover;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   color: #fff;
   padding-top: 100px;
   @media screen and (max-width: 990px) {

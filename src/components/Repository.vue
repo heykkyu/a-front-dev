@@ -2,7 +2,7 @@
   <div id="repository" class="container">
     <div class="resume-intro row">
       <div class="col-md-12">
-        <h2 class="section__title">Toy Projects</h2>
+        <h2 class="title">Toy Projects</h2>
         <div>
           <div v-for="repo in filteredlist" :key="repo.id">
             <ul v-if="!repo.fork" class="boxshadow-tab">
