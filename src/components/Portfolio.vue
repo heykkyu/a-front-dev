@@ -8,7 +8,7 @@
           v-for="item in portfolio"
           :key="item.title"
         >
-          <div class="portfolio__carousel__box">
+          <div class="portfolio__carousel__box boxshadow-tab">
             <img
               :src="item.imagePath" 
               alt="screent shot of cookierunfont"
@@ -39,7 +39,7 @@ export default {
       portfolio: [
         {
           title: 'Cookierun Font',
-          content: 'Made with Vue.js based on Fullpage.js </br> License is own to Corp.',
+          content: 'Made with Vue.js based on Fullpage.js </br> License is own to Corp',
           date: 'September 2019',
           url: 'https://cookierunfont.com',
           imagePath: '/image/cookie.png'
@@ -47,7 +47,7 @@ export default {
          {
           title: 'Hey Movie',
           content: 'Made with React',
-          date: 'September 2019',
+          date: 'September 2019 // not finished yet',
           url: 'https://hey-movie.netlify.app',
           imagePath: '/image/heymovie.png'
         },
@@ -69,27 +69,31 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio {
+  margin-bottom: 100px;
   .portfolio__carousel {
     outline: border-box;
     .portfolio__carousel__box {
       display: flex;
+      align-items: center;
       margin-top: 10px;
-      -webkit-box-shadow: 4px 4px 12px -7px #333333;
-      box-shadow: 4px 4px 12px -7px #333333;
-      border-radius: 8px;
-      padding: 5px 10px 20px;
       .portfolio__carousel__box__title {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: bold;
       }
       img {
         width: 25%;
         height: auto;
         margin-right: 5%;
+        --background-color: coral;
+        --aspect-ratio: 1;
       }
       .portfolio__carousel__box__desc {
-          font-size: 14px;
-    }
+        font-size: 14px;
+        .portfolio__carousel__box__date {
+          opacity: .6;
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 }

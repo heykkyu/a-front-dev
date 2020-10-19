@@ -41,9 +41,9 @@
   background-position: 50%;
   background-size: cover;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   color: #fff;
-  padding-top: 100px;
+  // padding-top: 100px;
   @media screen and (max-width: 990px) {
     background: linear-gradient(34deg, rgba(100,46,152,1) 14%, rgba(0,212,255,1) 92%);
   }

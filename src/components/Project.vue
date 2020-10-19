@@ -6,9 +6,9 @@
       </div>
     </div>
     <div class="portfolio-cards">
-      <div class="row project-card col-md-12 boxshadow-tab">
+      <div class="row project-card col-md-10 boxshadow-tab">
         <div class="col-md-8 col-lg-10 project-card__info">
-          <h3 class="project-card__title">More specific informations what did I?</h3>
+          <h3 class="project-card__title"></h3>
           <p class="project-card__description">
             Contact me to get a resume.
           </p>

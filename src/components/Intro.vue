@@ -4,7 +4,7 @@
       <div class="col-md-10">
         <h2 id="hello_header" class="title">Hello</h2>
         <p class="section__description">
-          A frontend developer who struggle to stay ahead of others in order not to miss out on trends and not neglect to learn. There is no end to learning. This is my motto.
+          A detail-oriented front-end developer with 3 years experience building and maintaining responsive websites in the e-commerce industry. Proficient in JavaScript, CSS, HTM and Vue.js. Passionate about creating better UI/UX page for target customers and improving page with restful API and projects structure.
         </p>
       </div>
     </div>

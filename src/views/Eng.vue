@@ -1,8 +1,8 @@
 <template>
   <div class="Resume">
     <hello />
-    <portfolio />
     <intro />
+    <portfolio />
     <profile />
     <project />
     <repository />
