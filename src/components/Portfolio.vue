@@ -84,8 +84,7 @@ export default {
         width: 25%;
         height: auto;
         margin-right: 5%;
-        --background-color: coral;
-        --aspect-ratio: 1;
+        background-color: linear-gradient(34deg,#642e98 14%,#00d4ff 92%);
       }
       .portfolio__carousel__box__desc {
         font-size: 14px;
