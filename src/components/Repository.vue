@@ -4,7 +4,7 @@
       <div class="col-md-10">
         <h2 class="title">Github Respositories</h2>
         <div>
-          <div v-for="repo in filteredlist" :key="repo.id">
+          <div v-for="repo in repoList" :key="repo.id">
             <ul v-if="!repo.fork" class="boxshadow-tab">
               <p>
                 <strong>{{repo.name}} </strong>
@@ -61,14 +61,6 @@ import axios from 'axios';
 export default {
   mounted() {
     this.get();
-  },
-  computed: {
-    filteredlist() {
-      return this.repoList.sort(function (a,b) {
-        a.created_at < b.created_at ? -1 : 1;
-        // will fix soon.
-      });
-    }
   },
   data() {
     return {

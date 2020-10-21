@@ -27,19 +27,6 @@ export default {
     }
     .url {
       color: #999;
-      // height: 50px;
-      // border-radius: 25px;
-      // font-size: 14px;
-      // line-height: 20px;
-      // text-transform: uppercase;
-      // padding: 15px;
-      // min-width: 170px;
-      // text-align: center;
-      // display: inline-block;
-      // color: #fff!important;
-      // font-weight: 600;
-      // overflow: hidden;
-      // border:none;
     }
   }
 </style>

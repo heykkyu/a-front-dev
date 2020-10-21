@@ -11,7 +11,7 @@
           <div class="portfolio__carousel__box boxshadow-tab">
             <img
               :src="item.imagePath" 
-              alt="screent shot of cookierunfont"
+              alt=" "
             />
             <div class="portfolio__carousel__box__desc">
               <p class="portfolio__carousel__box__title">
@@ -81,10 +81,11 @@ export default {
         font-weight: bold;
       }
       img {
-        width: 25%;
-        height: auto;
+        width: 110px;
+        height: 110px;
         margin-right: 5%;
-        background-color: linear-gradient(34deg,#642e98 14%,#00d4ff 92%);
+        background: linear-gradient(34deg, #642e98 14%, #00d4ff 92%);
+        border-radius: 6px;
       }
       .portfolio__carousel__box__desc {
         font-size: 14px;
