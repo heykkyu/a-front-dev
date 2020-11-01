@@ -5,18 +5,12 @@
   </div>
 </template>
 
-<style lang="scss">
-@import "@/assets/_style.scss";
-</style>
-
 <script>
-import Header from '@/components/Header.vue'
+// import Header from '@/components/Header.vue'
 
 export default {
   components: {
-    Header,
+    // Header,
   }
 }
 </script>
-
-

@@ -11,13 +11,6 @@
   </div>
 </template>
 
-<script>
-export default {
-
-
-}
-</script>
-
 <style lang="scss" scoped>
   .resume-intro {
     padding-top: 60px;
