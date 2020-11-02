@@ -39,21 +39,21 @@ export default {
       portfolio: [
         {
           title: 'Cookierun Font',
-          content: 'Made with Vue.js based on Fullpage.js </br> License is own to Corp',
+          content: 'Vue.js, Vue-cli, Css3 and Fullpage.js </br> License is own to Corp',
           date: 'September 2019',
           url: 'https://cookierunfont.com',
           imagePath: '/image/cookie.png'
         },
          {
           title: 'Hey Movie',
-          content: 'Made with React',
-          date: 'September 2019 // not finished yet',
+          content: 'React, Css3 and Redux',
+          date: 'November 2019 // not finished yet',
           url: 'https://hey-movie.netlify.app',
           imagePath: '/image/heymovie.png'
         },
          {
           title: 'Hey Trip',
-          content: 'Made with Vue.js based on Fullpage.js',
+          content: 'Vue.js, Vue-cli, Css3 and Fullpage.js',
           date: 'September 2019',
           url: 'https://hey-trip.netlify.app',
           imagePath: '/image/heytrip.png'
