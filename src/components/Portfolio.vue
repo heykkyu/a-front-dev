@@ -3,14 +3,14 @@
     <div class="row">
       <div class="col-md-10">
         <h2 class="title">Personal portfolio</h2>
-        <div 
+        <div
           class="portfolio__carousel"
           v-for="item in portfolio"
           :key="item.title"
         >
           <div class="portfolio__carousel__box boxshadow-tab">
             <img
-              :src="item.imagePath" 
+              :src="item.imagePath"
               alt=" "
             />
             <div class="portfolio__carousel__box__desc">
@@ -39,30 +39,27 @@ export default {
       portfolio: [
         {
           title: 'Cookierun Font',
-          content: 'Vue.js, Vue-cli, Css3 and Fullpage.js </br> License is own to Corp',
+          content: 'Vue.js, Vue-cli, Scss and Fullpage.js </br> License is own to Corp',
           date: 'September 2019',
           url: 'https://cookierunfont.com',
           imagePath: '/image/cookie.png'
         },
-         {
+        {
           title: 'Hey Movie',
-          content: 'React, Css3 and Redux',
-          date: 'November 2019 // not finished yet',
+          content: 'React, Scss and Redux',
+          date: 'November 2020 // not finished yet',
           url: 'https://hey-movie.netlify.app',
           imagePath: '/image/heymovie.png'
         },
-         {
+        {
           title: 'Hey Trip',
-          content: 'Vue.js, Vue-cli, Css3 and Fullpage.js',
+          content: 'Vue.js, Vue-cli, Scss and Fullpage.js',
           date: 'September 2019',
           url: 'https://hey-trip.netlify.app',
           imagePath: '/image/heytrip.png'
         }
       ]
     }
-  },
-  methods: {
-    
   }
 }
 </script>
